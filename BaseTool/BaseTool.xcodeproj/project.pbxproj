@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9727B077206497E500D8B939 /* UIView+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 9727B075206497E500D8B939 /* UIView+Category.h */; };
+		9727B078206497E500D8B939 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 9727B076206497E500D8B939 /* UIView+Category.m */; };
 		974C7B6B205795DB002372B5 /* BaseTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974C7B61205795DB002372B5 /* BaseTool.framework */; };
 		974C7B70205795DB002372B5 /* BaseToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 974C7B6F205795DB002372B5 /* BaseToolTests.m */; };
 		974C7B72205795DB002372B5 /* BaseTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 974C7B64205795DB002372B5 /* BaseTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		974C7B7F20579611002372B5 /* SKBaseTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 974C7B7D20579611002372B5 /* SKBaseTool.h */; };
 		974C7B8020579611002372B5 /* SKBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 974C7B7E20579611002372B5 /* SKBaseTool.m */; };
+		97A14F86206B2AA9004C64D0 /* ArchiveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A14F84206B2AA9004C64D0 /* ArchiveObject.h */; };
+		97A14F87206B2AA9004C64D0 /* ArchiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A14F85206B2AA9004C64D0 /* ArchiveObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9727B075206497E500D8B939 /* UIView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		9727B076206497E500D8B939 /* UIView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		974C7B61205795DB002372B5 /* BaseTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		974C7B64205795DB002372B5 /* BaseTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTool.h; sourceTree = "<group>"; };
 		974C7B65205795DB002372B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +39,8 @@
 		974C7B71205795DB002372B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		974C7B7D20579611002372B5 /* SKBaseTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBaseTool.h; sourceTree = "<group>"; };
 		974C7B7E20579611002372B5 /* SKBaseTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBaseTool.m; sourceTree = "<group>"; };
+		97A14F84206B2AA9004C64D0 /* ArchiveObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiveObject.h; sourceTree = "<group>"; };
+		97A14F85206B2AA9004C64D0 /* ArchiveObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 				974C7B65205795DB002372B5 /* Info.plist */,
 				974C7B7D20579611002372B5 /* SKBaseTool.h */,
 				974C7B7E20579611002372B5 /* SKBaseTool.m */,
+				9727B075206497E500D8B939 /* UIView+Category.h */,
+				9727B076206497E500D8B939 /* UIView+Category.m */,
+				97A14F84206B2AA9004C64D0 /* ArchiveObject.h */,
+				97A14F85206B2AA9004C64D0 /* ArchiveObject.m */,
 			);
 			path = BaseTool;
 			sourceTree = "<group>";
@@ -100,6 +112,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				974C7B72205795DB002372B5 /* BaseTool.h in Headers */,
+				9727B077206497E500D8B939 /* UIView+Category.h in Headers */,
+				97A14F86206B2AA9004C64D0 /* ArchiveObject.h in Headers */,
 				974C7B7F20579611002372B5 /* SKBaseTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A14F87206B2AA9004C64D0 /* ArchiveObject.m in Sources */,
+				9727B078206497E500D8B939 /* UIView+Category.m in Sources */,
 				974C7B8020579611002372B5 /* SKBaseTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

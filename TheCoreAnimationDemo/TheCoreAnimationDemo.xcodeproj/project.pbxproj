@@ -75,7 +75,6 @@
 		97DF22BB205A548500D4D3D7 /* CustomImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
 		97DF22BC205A548500D4D3D7 /* CustomImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
 		97DF22BF205A560600D4D3D7 /* Header_Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header_Custom.h; sourceTree = "<group>"; };
-		97DF22D5205AC63C00D4D3D7 /* TheCoreAnimationDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TheCoreAnimationDemo copy-Info.plist"; path = "/Users/caoshuaikun/Desktop/MyMainProject/TheCoreAnimationDemo/TheCoreAnimationDemo copy-Info.plist"; sourceTree = "<absolute>"; };
 		F2D9D68489F747A797A641CC /* Pods-TheCoreAnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCoreAnimationDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TheCoreAnimationDemo/Pods-TheCoreAnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +111,6 @@
 				97DF228E205A4D7700D4D3D7 /* TheCoreAnimationDemoTests */,
 				97DF2299205A4D7700D4D3D7 /* TheCoreAnimationDemoUITests */,
 				97DF2271205A4D7600D4D3D7 /* Products */,
-				97DF22D5205AC63C00D4D3D7 /* TheCoreAnimationDemo copy-Info.plist */,
 				E6687749F3B050BA1FBF3AE4 /* Pods */,
 				B022589964FB21BAE9FC69E0 /* Frameworks */,
 			);
