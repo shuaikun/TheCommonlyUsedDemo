@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CommunityBundle/CommunityBundle.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ARDemo/ARDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BaseUseDemo/BaseUseDemo.xcodeproj">
    </FileRef>
    <FileRef

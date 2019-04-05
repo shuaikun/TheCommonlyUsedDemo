@@ -17,6 +17,7 @@
 		97A14FBC206B2CF2004C64D0 /* BaseUseDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A14FBB206B2CF2004C64D0 /* BaseUseDemoUITests.m */; };
 		97A14FCA206B2D5A004C64D0 /* BaseTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A14FCB206B2D5A004C64D0 /* BaseTool.framework */; };
 		97A14FCE206B2DCE004C64D0 /* PersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A14FCD206B2DCD004C64D0 /* PersonTableViewController.m */; };
+		97D4FE272072FB73001E3463 /* PersonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D4FE262072FB73001E3463 /* PersonObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		97A14FCB206B2D5A004C64D0 /* BaseTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A14FCC206B2DCD004C64D0 /* PersonTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonTableViewController.h; sourceTree = "<group>"; };
 		97A14FCD206B2DCD004C64D0 /* PersonTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonTableViewController.m; sourceTree = "<group>"; };
+		97D4FE252072FB73001E3463 /* PersonObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonObject.h; sourceTree = "<group>"; };
+		97D4FE262072FB73001E3463 /* PersonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				97A14F95206B2CF2004C64D0 /* AppDelegate.m */,
 				97A14FCC206B2DCD004C64D0 /* PersonTableViewController.h */,
 				97A14FCD206B2DCD004C64D0 /* PersonTableViewController.m */,
+				97D4FE252072FB73001E3463 /* PersonObject.h */,
+				97D4FE262072FB73001E3463 /* PersonObject.m */,
 				97A14F9A206B2CF2004C64D0 /* Main.storyboard */,
 				97A14FA0206B2CF2004C64D0 /* Assets.xcassets */,
 				97A14FA2206B2CF2004C64D0 /* LaunchScreen.storyboard */,
@@ -281,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A14FCE206B2DCE004C64D0 /* PersonTableViewController.m in Sources */,
+				97D4FE272072FB73001E3463 /* PersonObject.m in Sources */,
 				97A14F9F206B2CF2004C64D0 /* BaseUseDemo.xcdatamodeld in Sources */,
 				97A14FA7206B2CF2004C64D0 /* main.m in Sources */,
 				97A14F96206B2CF2004C64D0 /* AppDelegate.m in Sources */,

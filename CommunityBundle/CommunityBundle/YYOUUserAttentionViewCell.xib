@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="YYOUUserAttentionViewCell" rowHeight="75" id="KGk-i7-Jjw" customClass="YYOUUserAttentionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAC-ic-7Z0" customClass="YYOUCustomBtnRow">
+                        <rect key="frame" x="297" y="23" width="66" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="mdb-yi-N7Y"/>
+                            <constraint firstAttribute="height" constant="28" id="vvN-LU-dsd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                        <state key="normal" image="guanzhu">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="attentionClikc:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WzV-V2-fTb"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张飞" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bk9-Yx-Yzk">
+                        <rect key="frame" x="70" y="27.5" width="217" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Kfe-7T-ech"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="epP-HQ-5KG">
+                        <rect key="frame" x="20" y="16.5" width="42" height="42"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="76M-3o-OtL"/>
+                            <constraint firstAttribute="height" constant="42" id="Cp4-Sk-g8Z"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="21"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="epP-HQ-5KG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="GaW-Sc-4AL"/>
+                    <constraint firstAttribute="trailing" secondItem="QAC-ic-7Z0" secondAttribute="trailing" constant="12" id="MF0-ir-5vt"/>
+                    <constraint firstItem="QAC-ic-7Z0" firstAttribute="leading" secondItem="Bk9-Yx-Yzk" secondAttribute="trailing" constant="10" id="c53-MO-afR"/>
+                    <constraint firstItem="QAC-ic-7Z0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eXt-1A-tSU"/>
+                    <constraint firstItem="epP-HQ-5KG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ljd-aF-HU6"/>
+                    <constraint firstItem="Bk9-Yx-Yzk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nPG-e4-G4D"/>
+                    <constraint firstItem="Bk9-Yx-Yzk" firstAttribute="leading" secondItem="epP-HQ-5KG" secondAttribute="trailing" constant="8" id="sbq-Y6-PzX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+            <connections>
+                <outlet property="attentionBtn" destination="QAC-ic-7Z0" id="RDR-wc-MZy"/>
+                <outlet property="userImg" destination="epP-HQ-5KG" id="dQM-w7-ZLt"/>
+                <outlet property="userName" destination="Bk9-Yx-Yzk" id="xGS-1f-khV"/>
+            </connections>
+            <point key="canvasLocation" x="207.5" y="-55.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="guanzhu" width="11" height="10"/>
+    </resources>
+</document>

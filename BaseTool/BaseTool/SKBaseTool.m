@@ -14,6 +14,7 @@
     NSLog(@"Hello word!");
 }
 
+//image切圆角
 + (UIImage *)imageWithRoundCorner:(UIImage *)sourceImage cornerRadius:(CGFloat)cornerRadius size:(CGSize)size {
     
     CGFloat scale = [UIScreen mainScreen].scale;
@@ -26,6 +27,19 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;
+}
+
+//view切圆角
++ (void)viewClipCorners:(UIView *)sourseView cornerRadSize:(CGSize)cornerRadSize {
+    
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:sourseView.bounds
+                                                   byRoundingCorners:UIRectCornerAllCorners
+                                                         cornerRadii:cornerRadSize];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc]init];
+    maskLayer.frame = sourseView.bounds;//设置大小
+    maskLayer.path = maskPath.CGPath;//设置图形样子
+    sourseView.layer.mask = maskLayer;
+    
 }
 
 @end

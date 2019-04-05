@@ -15,5 +15,7 @@
 
 //给图片切圆角
 + (UIImage *)imageWithRoundCorner:(UIImage *)sourceImage cornerRadius:(CGFloat)cornerRadius size:(CGSize)size;
+//view切圆角
++ (void)viewClipCorners:(UIView *)sourseView cornerRadSize:(CGSize)cornerRadSize;
 
 @end

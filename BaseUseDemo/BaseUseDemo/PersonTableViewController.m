@@ -6,8 +6,8 @@
 //  Copyright © 2018年 useeinfo. All rights reserved.
 //
 
-#import "PersonTableViewController.h"
-#import <BaseTool/ArchiveObject.h>
+#import "PersonTableViewController.h" 
+#import "PersonObject.h"
 
 @interface PersonTableViewController ()
 
@@ -30,21 +30,28 @@
 
 //归档
 - (IBAction)archiver:(id)sender {
-    ArchiveObject * archive = [[ArchiveObject alloc] init];
-    archive.name = @"大美女";
-    archive.age = 20;
+    PersonObject * person = [[PersonObject alloc] init];
+    person.name = @"你好";
+    person.age = 20;
     
+//    NSString * stringPath = [NSHomeDirectory() stringByAppendingPathComponent:@"giveMe"];
+//    BOOL success = [NSKeyedArchiver archiveRootObject:person toFile:stringPath];
+//    if (success) {
+//        NSLog(@" success ");
+//    } else {
+//        NSLog(@" fail ");
+//    }
     //准备路径:
     NSString *path = NSHomeDirectory();
     NSLog(@"%@",path);
-    
+
     path = [path stringByAppendingPathComponent:@"singeGirl.txt"];
     //1:准备存储数据的对象
     NSMutableData *data = [NSMutableData data];
     //2:创建归档对象
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
     //3:开始归档
-    [archiver encodeObject:archive forKey:@"person"];
+    [archiver encodeObject:person forKey:@"person"];
     //4:完成归档
     [archiver finishEncoding];
     //5:写入文件当中
@@ -59,19 +66,23 @@
 //解档
 - (IBAction)unArchiver:(id)sender {
     
+//    NSString * path = [NSHomeDirectory() stringByAppendingString:@"giveMe"];
+//    id array = [[ArchiveObject new] decodeObjectForKey:path];
+//    NSLog(@" 解析出来的 %@",array);
     NSString * path = NSHomeDirectory();
     //准备解档路径
     NSData *myData = [NSData dataWithContentsOfFile:path];
     //创建反归档对象
     NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:myData];
     //反归档
-    ArchiveObject *unArchiverObject = [ArchiveObject new];
+    PersonObject *unArchiverObject = [[PersonObject alloc] init];
     unArchiverObject = [unarchiver decodeObjectForKey:@"person"];
     //完成反归档
     [unarchiver finishDecoding];
-    
+
     [self.mutableArray addObject:unArchiverObject];
-    [self.tableView reloadData];
+    NSLog(@"%@",self.mutableArray);
+//    [self.tableView reloadData];
 }
 
 #pragma mark - tableViewDataSource
@@ -86,7 +97,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    ArchiveObject * archive = self.mutableArray[indexPath.row];
+    PersonObject * archive = self.mutableArray[indexPath.row];
     cell.textLabel.text = archive.name;
     return cell;
 }

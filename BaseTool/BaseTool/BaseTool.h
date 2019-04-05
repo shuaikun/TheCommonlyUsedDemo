@@ -21,5 +21,8 @@ FOUNDATION_EXPORT const unsigned char BaseToolVersionString[];
 
 #define BG_COLOR UIColorFromRGB(0xefeff4)
 
+#define UIColorWithRGB(R,G,B,P) \
+[UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:P]
+
 #define Screen_Width [UIScreen mainScreen].bounds.size.width
 #define Screen_Height [UIScreen mainScreen].bounds.size.height

@@ -19,6 +19,7 @@
 		978E0E572063871100285C13 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 978E0E562063871100285C13 /* LogInViewController.m */; };
 		978E0E5A2063A2C600285C13 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978E0E592063A2C600285C13 /* MobileCoreServices.framework */; };
 		978E0E5B2063B22300285C13 /* BaseTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978E0E5C2063B22300285C13 /* BaseTool.framework */; };
+		97D4FADF2071FAE3001E3463 /* LogInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D4FADE2071FAE3001E3463 /* LogInView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		978E0E562063871100285C13 /* LogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		978E0E592063A2C600285C13 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		978E0E5C2063B22300285C13 /* BaseTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D4FADD2071FAE3001E3463 /* LogInView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInView.h; sourceTree = "<group>"; };
+		97D4FADE2071FAE3001E3463 /* LogInView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInView.m; sourceTree = "<group>"; };
 		F21005F25317411CE465A070 /* Pods-LogInInterFaceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogInInterFaceDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LogInInterFaceDemo/Pods-LogInInterFaceDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +142,8 @@
 				970D0352205911F600D0B2B3 /* AppDelegate.m */,
 				978E0E552063871100285C13 /* LogInViewController.h */,
 				978E0E562063871100285C13 /* LogInViewController.m */,
+				97D4FADD2071FAE3001E3463 /* LogInView.h */,
+				97D4FADE2071FAE3001E3463 /* LogInView.m */,
 				970D0357205911F600D0B2B3 /* Main.storyboard */,
 				970D035D205911F600D0B2B3 /* Assets.xcassets */,
 				970D035F205911F600D0B2B3 /* LaunchScreen.storyboard */,
@@ -356,6 +361,7 @@
 			files = (
 				978E0E572063871100285C13 /* LogInViewController.m in Sources */,
 				970D035C205911F600D0B2B3 /* LogInInterFaceDemo.xcdatamodeld in Sources */,
+				97D4FADF2071FAE3001E3463 /* LogInView.m in Sources */,
 				970D0364205911F600D0B2B3 /* main.m in Sources */,
 				970D0353205911F600D0B2B3 /* AppDelegate.m in Sources */,
 			);

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YYOUZonePlacehoderView">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="293"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6t-XS-LNl">
+                    <rect key="frame" x="0.0" y="0.0" width="461" height="12"/>
+                    <color key="backgroundColor" red="0.95295017959999995" green="0.95292967559999997" blue="0.95293372870000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="HCL-KC-WlT"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zone_placehoderimg" translatesAutoresizingMaskIntoConstraints="NO" id="mqK-P9-ibA">
+                    <rect key="frame" x="210.5" y="49" width="40" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="bea-yw-0Oy"/>
+                        <constraint firstAttribute="width" constant="40" id="eJn-SO-B0u"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有添加照片墙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a40-UG-t5V">
+                    <rect key="frame" x="171.5" y="107" width="119.5" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="c36-Fd-4Qc"/>
+                        <constraint firstAttribute="width" constant="120" id="eiW-lT-5d6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C49-1C-P2p">
+                    <rect key="frame" x="168" y="159" width="125" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cYF-hf-rCp"/>
+                        <constraint firstAttribute="width" constant="125" id="iGJ-lJ-xsI"/>
+                    </constraints>
+                    <state key="normal" title="去添加">
+                        <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addImg:" destination="iN0-l3-epB" eventType="touchUpInside" id="y2b-Fp-oCS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="j6t-XS-LNl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3zC-ek-fwh"/>
+                <constraint firstItem="a40-UG-t5V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8Z5-Y8-S85"/>
+                <constraint firstItem="mqK-P9-ibA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WLC-FI-c4G"/>
+                <constraint firstItem="C49-1C-P2p" firstAttribute="top" secondItem="a40-UG-t5V" secondAttribute="bottom" constant="34" id="bbC-nl-Jgt"/>
+                <constraint firstAttribute="trailing" secondItem="j6t-XS-LNl" secondAttribute="trailing" id="cNl-X0-qvE"/>
+                <constraint firstItem="C49-1C-P2p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dmI-ab-m5M"/>
+                <constraint firstItem="j6t-XS-LNl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gBF-r4-tl3"/>
+                <constraint firstItem="a40-UG-t5V" firstAttribute="top" secondItem="mqK-P9-ibA" secondAttribute="bottom" constant="17" id="gxI-CQ-auY"/>
+                <constraint firstItem="mqK-P9-ibA" firstAttribute="top" secondItem="j6t-XS-LNl" secondAttribute="bottom" constant="37" id="yVi-28-K8q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-32" y="-130"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zone_placehoderimg" width="40" height="41"/>
+    </resources>
+</document>

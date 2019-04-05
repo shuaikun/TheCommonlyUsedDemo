@@ -35,12 +35,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Hss-V5-L1m">
                         <rightBarButtonItems>
-                            <barButtonItem title="归档" id="vyi-ob-8v4">
+                            <barButtonItem title="存储" id="vyi-ob-8v4">
                                 <connections>
                                     <action selector="archiver:" destination="VAN-M3-fJL" id="Ipl-8y-c1W"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="解档" id="x5k-VP-peR">
+                            <barButtonItem title="解析" id="x5k-VP-peR">
                                 <connections>
                                     <action selector="unArchiver:" destination="VAN-M3-fJL" id="hs2-Vp-gei"/>
                                 </connections>
